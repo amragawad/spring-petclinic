@@ -24,4 +24,5 @@ steps:
   inputs:
     codeCoverageTool: 'JaCoCo'
     summaryFileLocation: '**/site/jacoco/jacoco.xml'
+    pathToSources: '**/../src/main'
     reportDirectory: '**/site/jacoco'
