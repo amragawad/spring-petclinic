@@ -23,5 +23,6 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo'
-    summaryFileLocation: '${System.DefaultWorkingDirectory}/**/reports/jacoco/test/jacocoTestReport.xml'
-    reportDirectory: '${System.DefaultWorkingDirectory}/**/reports/jacoco/test/html'
+    summaryFileLocation: '${System.DefaultWorkingDirectory}/spring-petclinic/target/site/jacoco.xml'
+    pathToSources: '${System.DefaultWorkingDirectory}/spring-petclinic/src/main'
+    reportDirectory: '${System.DefaultWorkingDirectory}/spring-petclinic/target/site/jacoco'
